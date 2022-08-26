@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  console:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-08-26T00:14:17.733796-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 9e89a0f3c53c50fad0dab40508c1ce36eff4db87707ed170f692af429499b6d4
+    name: console
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/console-0.1.0/console-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-26T00:14:17.733815-04:00"
