@@ -11,4 +11,15 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/console-0.1.0/console-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-26T00:14:17.733815-04:00"
+  vscode:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-08-26T01:04:37.59044-04:00"
+    description: A Helm chart for Kubernetes
+    digest: cd24ace0b4ea082f6ae270a29cdeaba99c124f24f6f9e6d1028850fdde4b4c49
+    name: vscode
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/vscode-0.1.0/vscode-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-08-26T01:04:37.590455-04:00"
