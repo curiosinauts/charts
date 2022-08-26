@@ -14,6 +14,16 @@ entries:
   vscode:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2022-08-26T01:30:50.035389-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 68291650ffca7784d12998326b3c2b1f05140146f687e37445c213b5d9f0af11
+    name: vscode
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/vscode-0.1.1/vscode-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2022-08-26T01:04:37.59044-04:00"
     description: A Helm chart for Kubernetes
     digest: cd24ace0b4ea082f6ae270a29cdeaba99c124f24f6f9e6d1028850fdde4b4c49
@@ -22,4 +32,4 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/vscode-0.1.0/vscode-0.1.0.tgz
     version: 0.1.0
-generated: "2022-08-26T01:04:37.590455-04:00"
+generated: "2022-08-26T01:30:50.035407-04:00"
