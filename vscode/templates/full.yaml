@@ -1,0 +1,82 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: local-path-pvc-{{.Release.Name}}
+  namespace: default
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: local-path
+  resources:
+    requests:
+      storage: 2Gi
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vscode-{{.Release.Name}}
+  labels:
+    app: vscode-{{.Release.Name}}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vscode-{{.Release.Name}}
+  template:
+    metadata:
+      labels:
+        app: vscode-{{.Release.Name}}
+    spec:
+      containers:
+      - name: vscode-{{.Release.Name}}
+        image: curiosinauts/vscode-ext:0.1.0
+        env:
+        - name: VSCODE_USERNAME
+          value: {{.Release.Name}}
+        - name: VSCODE_PASSWORD
+          value: {{.Values.password}}
+        ports:
+        - containerPort: 9991
+        volumeMounts:
+        - name: volv
+          mountPath: /home/coder/workspace			
+      volumes:
+      - name: volv
+        persistentVolumeClaim:
+          claimName: local-path-pvc-{{.Release.Name}}		
+      dnsPolicy: Default 
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vscode-{{.Release.Name}}
+spec:
+  selector:
+    app: vscode-{{.Release.Name}}
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9991
+
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: vscode-{{.Release.Name}}
+  annotations:
+    kubernetes.io/ingress.class: "traefik"
+spec:
+  rules:
+  - host: vscode-{{.Release.Name}}.curiosityworks.org
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: vscode-{{.Release.Name}}
+            port: 
+              number: 80
