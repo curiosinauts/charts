@@ -70,7 +70,7 @@ metadata:
     kubernetes.io/ingress.class: "traefik"
 spec:
   rules:
-  - host: vscode-{{.Release.Name}}.{{Values.domain}}
+  - host: vscode-{{.Release.Name}}.{{.Values.domain}}
     http:
       paths:
       - path: /
