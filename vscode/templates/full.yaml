@@ -10,7 +10,7 @@ spec:
   storageClassName: local-path
   resources:
     requests:
-      storage: 2Gi
+      storage: {{.Values.storageSize}}
 
 ---
 apiVersion: apps/v1
@@ -80,3 +80,7 @@ spec:
             name: vscode-{{.Release.Name}}
             port: 
               number: 80
+  tls:
+  - hosts:
+    - vscode-{{.Release.Name}}.{{.Values.domain}}
+    secretName: {{.Values.secretName}}

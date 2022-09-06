@@ -1,2 +1,4 @@
-password: student
+password: make-sure-to-generate-an-unique-password
 domain: curiosityworks.org
+storageSize: 10Gi
+secretName: curiositywork-org-prod-tls-replica
