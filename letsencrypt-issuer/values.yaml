@@ -1,0 +1,2 @@
+email: foo@example.com 
+apiTokenBase64: required-must-specify-on-cli
