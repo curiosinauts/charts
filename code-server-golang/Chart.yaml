@@ -1,5 +1,5 @@
 apiVersion: v2
-name: code-server-python 
+name: code-server-golang 
 description: A Helm chart for code-server golang
 
 # A chart can be either an 'application' or a 'library' chart.
