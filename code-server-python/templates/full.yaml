@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: vscode-{{.Release.Name}}
-        image: curiosinauts/code-server-python:1.0.1
+        image: curiosinauts/code-server-python:1.0.2
         env:
         - name: VSCODE_USERNAME
           value: {{.Release.Name}}
