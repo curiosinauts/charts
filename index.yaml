@@ -3,6 +3,16 @@ entries:
   code-server-golang:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-09-08T09:23:19.908011-04:00"
+    description: A Helm chart for code-server golang
+    digest: d57b8a93e21a0c680f4c821e28f95fc0fdcdc667e2a4ee4b7db9eabff787f871
+    name: code-server-golang
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/code-server-golang-0.1.1/code-server-golang-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-09-07T05:17:48.800963-04:00"
     description: A Helm chart for code-server golang
     digest: dc313de6b4046f1c1071d2a71807d4fece3dc8a336c2ee1f16294a5168042082
@@ -12,6 +22,16 @@ entries:
     - https://github.com/curiosinauts/charts/releases/download/code-server-golang-0.1.0/code-server-golang-0.1.0.tgz
     version: 0.1.0
   code-server-python:
+  - apiVersion: v2
+    appVersion: 1.0.2
+    created: "2022-09-08T09:23:20.356861-04:00"
+    description: A Helm chart for code-server python
+    digest: d1cf6caa7657963b7e8fc632befa66509d8697f36acee37b456d21d282f782fc
+    name: code-server-python
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/code-server-python-0.1.3/code-server-python-0.1.3.tgz
+    version: 0.1.3
   - apiVersion: v2
     appVersion: 1.0.2
     created: "2022-09-07T16:05:33.73245-04:00"
@@ -52,6 +72,17 @@ entries:
     type: application
     urls:
     - https://github.com/curiosinauts/charts/releases/download/console-0.1.0/console-0.1.0.tgz
+    version: 0.1.0
+  letsencrypt-issuer:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-09-08T09:23:20.573386-04:00"
+    description: A Helm chart for configuring cert cluster issuers
+    digest: d07c5fb7736efa6f9fbabc81949909b2c6f48298c72b5b278bfb5764511ec66f
+    name: letsencrypt-issuer
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/letsencrypt-issuer-0.1.0/letsencrypt-issuer-0.1.0.tgz
     version: 0.1.0
   vscode:
   - apiVersion: v2
@@ -94,4 +125,4 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/vscode-0.1.0/vscode-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-07T16:05:34.316057-04:00"
+generated: "2022-09-08T09:23:21.305146-04:00"
