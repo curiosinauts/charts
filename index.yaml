@@ -65,6 +65,16 @@ entries:
   console:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2022-09-08T09:32:49.082405-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 8c2d3a2999794c203686d0bb31a39b89e7da20c0b14e9cc48bc8f1eadfd4eee8
+    name: console
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/console-0.1.1/console-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2022-08-26T00:14:17.733796-04:00"
     description: A Helm chart for Kubernetes
     digest: 9e89a0f3c53c50fad0dab40508c1ce36eff4db87707ed170f692af429499b6d4
@@ -125,4 +135,4 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/vscode-0.1.0/vscode-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-08T09:23:21.305146-04:00"
+generated: "2022-09-08T09:32:49.627208-04:00"
