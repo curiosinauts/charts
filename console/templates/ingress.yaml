@@ -16,3 +16,7 @@ spec:
                 name: console
                 port:
                   number: 80
+  tls:
+  - hosts:
+    - console.curiosityworks.org
+    secretName: {{.Values.secretName}}                  
