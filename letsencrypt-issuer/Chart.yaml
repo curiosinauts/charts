@@ -1,6 +1,6 @@
 apiVersion: v2
 name: letsencrypt-issuer 
-description: A Helm chart for configuring certificate
+description: A Helm chart for configuring cert cluster issuers
 
 # A chart can be either an 'application' or a 'library' chart.
 #
