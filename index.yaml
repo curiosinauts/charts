@@ -3,6 +3,16 @@ entries:
   code-server-golang:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-09-08T21:59:53.993417-04:00"
+    description: A Helm chart for code-server golang
+    digest: a8a4e1aabee98c58fa352ec1c2612aa853e0729f5ee887bdc9c94e723d20cff9
+    name: code-server-golang
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/code-server-golang-0.1.2/code-server-golang-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-09-08T09:23:19.908011-04:00"
     description: A Helm chart for code-server golang
     digest: d57b8a93e21a0c680f4c821e28f95fc0fdcdc667e2a4ee4b7db9eabff787f871
@@ -22,6 +32,16 @@ entries:
     - https://github.com/curiosinauts/charts/releases/download/code-server-golang-0.1.0/code-server-golang-0.1.0.tgz
     version: 0.1.0
   code-server-python:
+  - apiVersion: v2
+    appVersion: 1.0.2
+    created: "2022-09-08T21:59:54.486778-04:00"
+    description: A Helm chart for code-server python
+    digest: ca2f5664c334c077338a448717a2b6833867ad0d176ec06e2763369111deca7f
+    name: code-server-python
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/code-server-python-0.1.4/code-server-python-0.1.4.tgz
+    version: 0.1.4
   - apiVersion: v2
     appVersion: 1.0.2
     created: "2022-09-08T09:23:20.356861-04:00"
@@ -63,6 +83,16 @@ entries:
     - https://github.com/curiosinauts/charts/releases/download/code-server-python-0.1.0/code-server-python-0.1.0.tgz
     version: 0.1.0
   console:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-09-08T21:59:54.783842-04:00"
+    description: A Helm chart for Kubernetes
+    digest: 4c6577389b8993e17ed37934ed785d4daa71d7aae9e36d0c8010d34b3e2cf8bd
+    name: console
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/console-0.1.2/console-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     appVersion: 0.1.0
     created: "2022-09-08T09:32:49.082405-04:00"
@@ -135,4 +165,4 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/vscode-0.1.0/vscode-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-08T09:32:49.627208-04:00"
+generated: "2022-09-08T21:59:55.272584-04:00"
