@@ -42,7 +42,7 @@ spec:
                 key: console-session-key
                 name: console-secrets
           name: console
-          image: curiosinauts/console:{{ .Values.tag }}
+          image: curiosinauts/console:{{.Chart.AppVersion}}
           ports:
             - containerPort: 3000
       dnsPolicy: Default
