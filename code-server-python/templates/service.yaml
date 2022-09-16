@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vscode-{{.Release.Name}}
+spec:
+  selector:
+    app: vscode-{{.Release.Name}}
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9991
