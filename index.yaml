@@ -126,6 +126,16 @@ entries:
   letsencrypt-issuer:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2022-09-16T22:54:54.137936-04:00"
+    description: A Helm chart for configuring cert cluster issuers
+    digest: 6b1cb600a87897ddfe2eecc866b3ac46245f25b07447ae0f0b636665138310b9
+    name: letsencrypt-issuer
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/letsencrypt-issuer-0.1.1/letsencrypt-issuer-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2022-09-08T09:23:20.573386-04:00"
     description: A Helm chart for configuring cert cluster issuers
     digest: d07c5fb7736efa6f9fbabc81949909b2c6f48298c72b5b278bfb5764511ec66f
@@ -175,4 +185,4 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/vscode-0.1.0/vscode-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-16T09:09:48.237892-04:00"
+generated: "2022-09-16T22:54:54.566999-04:00"
