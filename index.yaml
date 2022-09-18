@@ -126,6 +126,16 @@ entries:
   filebrowser:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-09-18T15:29:06.039771-04:00"
+    description: A Helm chart for filebrowser
+    digest: 6a39463ce62513429f2180b8fa9f0255bb66d29f7880643cb66434c0ef1c983d
+    name: filebrowser
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/filebrowser-0.1.1/filebrowser-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-09-18T10:10:44.008349-04:00"
     description: A Helm chart for filebrowser
     digest: 3f0f3b5344868829567fbc1418df4fd954a33067e54661111ebc800b4a4023a1
@@ -196,4 +206,4 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/vscode-0.1.0/vscode-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-18T10:10:44.646455-04:00"
+generated: "2022-09-18T15:29:06.715391-04:00"
