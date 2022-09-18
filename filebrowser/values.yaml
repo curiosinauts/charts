@@ -1,4 +1,5 @@
+existingClaimNFSOnHost: gdrive-nfs
 password: "12345678"
-rootDir: /home/debian
-domain: curiosityworks.org
+rootDir: /mnt/data/share
+host: filebrowser.curiosityworks.org
 secretName: curiositywork-org-tls
