@@ -165,6 +165,18 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/letsencrypt-issuer-0.1.0/letsencrypt-issuer-0.1.0.tgz
     version: 0.1.0
+  volume:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-09-18T15:29:21.145881-04:00"
+    description: A Helm chart for host path persistent volume and persistent volume
+      claim
+    digest: d499eda25dbf6e9215eeb5937b81e0b839633608b119bdebcca50c7475f65707
+    name: volume
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/volume-0.1.0/volume-0.1.0.tgz
+    version: 0.1.0
   vscode:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -206,4 +218,4 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/vscode-0.1.0/vscode-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-18T15:29:06.715391-04:00"
+generated: "2022-09-18T15:29:21.583872-04:00"
