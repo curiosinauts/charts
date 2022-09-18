@@ -123,6 +123,17 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/console-0.1.0/console-0.1.0.tgz
     version: 0.1.0
+  filebrowser:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-09-18T10:10:44.008349-04:00"
+    description: A Helm chart for filebrowser
+    digest: 3f0f3b5344868829567fbc1418df4fd954a33067e54661111ebc800b4a4023a1
+    name: filebrowser
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/filebrowser-0.1.0/filebrowser-0.1.0.tgz
+    version: 0.1.0
   letsencrypt-issuer:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -185,4 +196,4 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/vscode-0.1.0/vscode-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-16T22:54:54.566999-04:00"
+generated: "2022-09-18T10:10:44.646455-04:00"
