@@ -1,0 +1,4 @@
+password: "12345678"
+rootDir: /home/debian
+domain: curiosityworks.org
+secretName: curiositywork-org-tls

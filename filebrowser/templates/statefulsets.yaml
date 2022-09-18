@@ -1,0 +1,42 @@
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: filebrowser-{{.Release.Name}}
+spec:
+  selector:
+    matchLabels:
+      app: filebrowser-{{.Release.Name}} # has to match .spec.template.metadata.labels
+  serviceName: filebrowser-{{.Release.Name}}
+  replicas: 1 # by default is 1
+  minReadySeconds: 10 # by default is 0
+  template:
+    metadata:
+      labels:
+        app: filebrowser-{{.Release.Name}} # has to match .spec.selector.matchLabels
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: filebrowser-{{.Release.Name}}
+        image: curiosinauts/filebrowser:{{.Chart.AppVersion}}
+        env:
+        - name: ROOT_DIR
+          value: {{.Values.rootDir}}
+        - name: ADMIN_PASSWORD
+          value: "{{.Values.password}}"
+        ports:
+        - containerPort: 8080 
+          name: filebrowser
+        volumeMounts:
+        - name: data 
+          mountPath: /home/debian
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: 
+          - ReadWriteOnce
+        storageClassName: local-path
+        resources:
+          requests:
+            storage: 2Gi 

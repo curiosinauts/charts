@@ -1,0 +1,23 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: filebrowser-{{.Release.Name}}
+  annotations:
+    kubernetes.io/ingress.class: "traefik"
+spec:
+  rules:
+  - host: filebrowser-{{.Release.Name}}.{{.Values.domain}}
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: filebrowser-{{.Release.Name}}
+            port: 
+              number: 80
+  tls:
+  - hosts:
+    - filebrowser-{{.Release.Name}}.{{.Values.domain}}
+    secretName: {{.Values.secretName}}
