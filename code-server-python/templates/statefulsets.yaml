@@ -26,10 +26,10 @@ spec:
           value: {{.Values.password}}        
         ports:
         - containerPort: 9991 
-          name: vscode-{{.Release.Name}}
+          name: vscode-http 
         volumeMounts:
         - name: data 
-          mountPath: /home/coder/workspace			
+          mountPath: /home/coder/workspace
   volumeClaimTemplates:
     - metadata:
         name: data
