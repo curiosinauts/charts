@@ -3,6 +3,16 @@ entries:
   code-server-golang:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-09-19T21:17:19.716576-04:00"
+    description: A Helm chart for code-server golang
+    digest: 3b102e069ffe1c33713f19abcd502ab6a6bb1a454dc944d4c6840a53dabbb57b
+    name: code-server-golang
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/code-server-golang-0.1.3/code-server-golang-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-09-08T21:59:53.993417-04:00"
     description: A Helm chart for code-server golang
     digest: a8a4e1aabee98c58fa352ec1c2612aa853e0729f5ee887bdc9c94e723d20cff9
@@ -228,4 +238,4 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/vscode-0.1.0/vscode-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-19T17:07:26.210867-04:00"
+generated: "2022-09-19T21:17:21.774983-04:00"
