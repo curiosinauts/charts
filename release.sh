@@ -11,3 +11,5 @@ git add .
 git commit -m "updating index"
 
 git push
+
+helm repo update curiosinauts
