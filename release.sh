@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cr package $1
+chart_name=$1
+
+cr package ${chart_name}
 
 cr upload
 
@@ -13,3 +15,5 @@ git commit -m "updating index"
 git push
 
 helm repo update curiosinauts
+
+helm show chart curiosinauts/${chart_name}
