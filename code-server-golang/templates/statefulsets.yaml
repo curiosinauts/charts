@@ -1,0 +1,42 @@
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: vscode-{{.Release.Name}}
+spec:
+  selector:
+    matchLabels:
+      app: vscode-{{.Release.Name}} # has to match .spec.template.metadata.labels
+  serviceName: vscode-{{.Release.Name}}
+  replicas: 1 # by default is 1
+  minReadySeconds: 10 # by default is 0
+  template:
+    metadata:
+      labels:
+        app: vscode-{{.Release.Name}} # has to match .spec.selector.matchLabels
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: vscode-{{.Release.Name}}
+        image: curiosinauts/code-server-golang:{{.Chart.AppVersion}}
+        env:
+        - name: VSCODE_USERNAME
+          value: {{.Release.Name}}
+        - name: VSCODE_PASSWORD
+          value: {{.Values.password}}        
+        ports:
+        - containerPort: 9991 
+          name: vscode-http 
+        volumeMounts:
+        - name: data 
+          mountPath: /home/coder/workspace
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: 
+          - ReadWriteOnce
+        storageClassName: local-path
+        resources:
+          requests:
+            storage: {{.Values.storageSize}}
