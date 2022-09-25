@@ -1,0 +1,3 @@
+adminPassword: "12345678"
+host: grafana.curiosityworks.org
+secretName: curiositywork-org-tls

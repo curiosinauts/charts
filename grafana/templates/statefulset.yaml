@@ -1,0 +1,40 @@
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: grafana-{{ .Release.Name }}
+spec:
+  selector:
+    matchLabels:
+      app: grafana-{{ .Release.Name }} # has to match .spec.template.metadata.labels
+  serviceName: grafana-{{ .Release.Name }}
+  replicas: 1 # by default is 1
+  minReadySeconds: 10 # by default is 0
+  template:
+    metadata:
+      labels:
+        app: grafana-{{ .Release.Name }} # has to match .spec.selector.matchLabels
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+        - name: grafana-{{ .Release.Name }}
+          image: curiosinauts/grafana:{{ .Chart.AppVersion }}
+          env:
+            - name: ADMIN_PASSWORD
+              value: "{{ .Values.adminPassword }}"
+          ports:
+            - containerPort: 3000  
+              name: grafana
+          volumeMounts:
+            - name: data-dir
+              mountPath: /opt/grafana/data
+  volumeClaimTemplates:
+    - metadata:
+        name: data-dir
+      spec:
+        accessModes: 
+          - ReadWriteOnce
+        storageClassName: local-path
+        resources:
+          requests:
+            storage: 1000Gi             
