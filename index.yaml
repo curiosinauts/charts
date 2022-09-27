@@ -226,6 +226,17 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/letsencrypt-issuer-0.1.0/letsencrypt-issuer-0.1.0.tgz
     version: 0.1.0
+  librespeed:
+  - apiVersion: v2
+    appVersion: 5.2.5
+    created: "2022-09-26T23:45:46.929214-04:00"
+    description: A Helm chart for librespeed
+    digest: 0d3c15a3dbfe17e3c9f422ef78a18ce0747d71287d8a0439e5e0ef2058510572
+    name: librespeed
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/librespeed-0.1.0/librespeed-0.1.0.tgz
+    version: 0.1.0
   volume:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -290,4 +301,4 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/website-0.1.0/website-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-25T09:03:58.78091-04:00"
+generated: "2022-09-26T23:45:47.93449-04:00"
