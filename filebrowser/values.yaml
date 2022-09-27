@@ -2,4 +2,4 @@ existingClaimNFSOnHost: gdrive-nfs
 password: "12345678"
 rootDir: /mnt/data/share
 host: filebrowser.curiosityworks.org
-secretName: curiositywork-org-tls
+secretName: curiosityworks-org-tls
