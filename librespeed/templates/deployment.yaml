@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: librespeed
+  labels:
+    app: librespeed
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: librespeed
+  template:
+    metadata:
+      labels:
+        app: librespeed
+    spec:
+      containers:
+        - name: librespeed
+          image: lscr.io/linuxserver/librespeed:latest
+          env:
+            - name: PUID
+              value: "1000"
+            - name: PGID
+              value: "1000"
+            - name: TZ
+              value: "{{ .Values.timeZone }}"
+            - name: PASSWORD
+              value: "{{ .Values.password }}"
+          ports:
+            - containerPort: 80
+      dnsPolicy: Default
