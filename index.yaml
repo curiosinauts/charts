@@ -3,6 +3,16 @@ entries:
   code-server-golang:
   - apiVersion: v2
     appVersion: 1.0.2
+    created: "2022-09-27T21:57:33.222294-04:00"
+    description: A Helm chart for code-server golang
+    digest: a926acbabfd804c45eb8b4087593b652c4f61b0b80108466d1140b9f8e1fe0bb
+    name: code-server-golang
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/code-server-golang-0.1.6/code-server-golang-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 1.0.2
     created: "2022-09-19T23:53:06.641894-04:00"
     description: A Helm chart for code-server golang
     digest: 81db76c944c7decb030b26ebb9cb2c1f752874b22adea4d10c993c597769729b
@@ -62,6 +72,16 @@ entries:
     - https://github.com/curiosinauts/charts/releases/download/code-server-golang-0.1.0/code-server-golang-0.1.0.tgz
     version: 0.1.0
   code-server-python:
+  - apiVersion: v2
+    appVersion: 1.0.3
+    created: "2022-09-27T21:57:34.264296-04:00"
+    description: A Helm chart for code-server python
+    digest: 7a61830bafb26cf570408e432c638e38feeae3dea28650771a2838d764577de6
+    name: code-server-python
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/code-server-python-0.1.8/code-server-python-0.1.8.tgz
+    version: 0.1.8
   - apiVersion: v2
     appVersion: 1.0.3
     created: "2022-09-19T23:39:09.332437-04:00"
@@ -145,6 +165,16 @@ entries:
   console:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2022-09-27T21:57:34.657522-04:00"
+    description: A Helm chart for Kubernetes
+    digest: c4e927d295c227ebbc82bdab37e563412c44d17a419ec5bce4726e67e7a72fea
+    name: console
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/console-0.1.3/console-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2022-09-08T21:59:54.783842-04:00"
     description: A Helm chart for Kubernetes
     digest: 4c6577389b8993e17ed37934ed785d4daa71d7aae9e36d0c8010d34b3e2cf8bd
@@ -176,6 +206,16 @@ entries:
   filebrowser:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-09-27T21:57:34.962411-04:00"
+    description: A Helm chart for filebrowser
+    digest: 746da6aadad434a6d4b0e45ee0e4646da323dfe36a6be87d5ee9231e621cd124
+    name: filebrowser
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/filebrowser-0.1.2/filebrowser-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-09-18T15:29:06.039771-04:00"
     description: A Helm chart for filebrowser
     digest: 6a39463ce62513429f2180b8fa9f0255bb66d29f7880643cb66434c0ef1c983d
@@ -195,6 +235,16 @@ entries:
     - https://github.com/curiosinauts/charts/releases/download/filebrowser-0.1.0/filebrowser-0.1.0.tgz
     version: 0.1.0
   grafana:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-09-27T21:57:35.19316-04:00"
+    description: A Helm chart for grafana
+    digest: 9bca5f596b12c17d96773cf0ccf5144b47624e57d3b3ee8bb3bbfc16ca5ab3d5
+    name: grafana
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/grafana-0.1.1/grafana-0.1.1.tgz
+    version: 0.1.1
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2022-09-25T09:03:57.980726-04:00"
@@ -227,6 +277,16 @@ entries:
     - https://github.com/curiosinauts/charts/releases/download/letsencrypt-issuer-0.1.0/letsencrypt-issuer-0.1.0.tgz
     version: 0.1.0
   librespeed:
+  - apiVersion: v2
+    appVersion: 5.2.5
+    created: "2022-09-27T21:57:35.63931-04:00"
+    description: A Helm chart for librespeed
+    digest: 6aefbd33bb836dcf168baa1dfb5d9465c640f4e34def47cd0b6d13df59da200b
+    name: librespeed
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/librespeed-0.1.1/librespeed-0.1.1.tgz
+    version: 0.1.1
   - apiVersion: v2
     appVersion: 5.2.5
     created: "2022-09-26T23:45:46.929214-04:00"
@@ -293,6 +353,16 @@ entries:
   website:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2022-09-27T21:57:36.360453-04:00"
+    description: A Helm chart for www.curiosityworks.org website
+    digest: 3a1fbc73f486f663294007648964847bd4edafb732c94ec51194204d3645c87d
+    name: website
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/website-0.1.1/website-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2022-09-20T09:15:41.760295-04:00"
     description: A Helm chart for www.curiosityworks.org website
     digest: 9446b8e02ad4a324c1179e1b1a5d8cd13c097f5a69365119bdcc0447675bb78d
@@ -301,4 +371,4 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/website-0.1.0/website-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-26T23:45:47.93449-04:00"
+generated: "2022-09-27T21:57:36.360557-04:00"
