@@ -1,2 +1,3 @@
-existingClaimNFSOnHost: data-www
+existingClaimNFSOnHostWWW: data-www
+existingClaimNFSOnHostDOCS: data-docs
 secretName: curiosityworks-org-tls

@@ -21,9 +21,14 @@ spec:
           - containerPort: 80
         volumeMounts:
           - mountPath: "/mnt/data/www"
-            name: data
+            name: data-www
+          - mountPath: "/mnt/data/docs"
+            name: data-docs
       dnsPolicy: Default 
       volumes:
-        - name: data
+        - name: data-www
           persistentVolumeClaim:
-            claimName:  {{ .Values.existingClaimNFSOnHost }}
+            claimName:  {{ .Values.existingClaimNFSOnHostWWW }}
+        - name: data-docs
+          persistentVolumeClaim:
+            claimName:  {{ .Values.existingClaimNFSOnHostDOCS }}
