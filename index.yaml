@@ -73,6 +73,16 @@ entries:
     version: 0.1.0
   code-server-python:
   - apiVersion: v2
+    appVersion: 1.0.8
+    created: "2024-08-25T22:06:19.155655005-04:00"
+    description: A Helm chart for code-server python
+    digest: 3b3828ecd28872422d00d3c517e0662eaa37d93a67c9080b49cb468176a5ede7
+    name: code-server-python
+    type: application
+    urls:
+    - https://github.com/curiosinauts/charts/releases/download/code-server-python-1.0.8/code-server-python-1.0.8.tgz
+    version: 1.0.8
+  - apiVersion: v2
     appVersion: 1.0.7
     created: "2024-08-25T20:57:53.084429864-04:00"
     description: A Helm chart for code-server python
@@ -401,4 +411,4 @@ entries:
     urls:
     - https://github.com/curiosinauts/charts/releases/download/website-0.1.0/website-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-25T20:57:53.084512488-04:00"
+generated: "2024-08-25T22:06:19.155737977-04:00"
